@@ -1,6 +1,7 @@
 import React from 'react';
-
+import classes from './Input.module.css';
 const Input=(props)=>{
+    return(
     <div
     className={`${classes.control} ${
       props.isValid === false ? classes.invalid : ''
@@ -15,5 +16,6 @@ const Input=(props)=>{
       onBlur={props.onBlur}
     />
   </div>
+    );
 };
 export default Input;
